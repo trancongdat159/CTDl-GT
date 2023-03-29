@@ -1,30 +1,25 @@
-#include <iostream>
-using namespace std;
+#include<stdio.h>
+#include<conio.h>
 
-double S(double x, int n)
+float Tinh(float x, int n)
 {
-    if (n == 0)
-        return 1;
-    else
-        return ((x,n)/(n)) + S(x,n-1);
+    if(n == 0)
+        return 0;
+    if(n == 1)
+        return x;
+    return (1 + x/n) * Tinh(x, n - 1) - (x/n) * Tinh(x, n - 2);
 }
-
-int tinhGiaiThua(int n) // Hàm tính giai th?a
-{
-    if (n == 0)
-        return 1;
-    else
-        return n * (n-1);
-}
-
 int main()
 {
-    double x;
+    float x;
     int n;
-    cout << "Nhap x: ";
-    cin >> x;
-    cout << "Nhap n: ";
-    cin >> n;
-    cout << "Tong S = " << S(x, n);
+
+    printf("\nNhap x: "); scanf("%f", &x);
+    printf("\nNhap n: "); scanf("%d", &n);
+
+    float kq = Tinh(x, n);
+    printf("\nKet qua = %.2f", kq);
+
+    getch();
     return 0;
 }
