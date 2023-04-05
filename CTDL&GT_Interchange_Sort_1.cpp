@@ -13,13 +13,3 @@ void Interchange_Sort(int a[], int n){
 	}
 }
 
-void main()
-{
-	int a[5] = {8, 4, 1, 6, 5};
-	Interchange_Sort(a, 5);
-	cout<<"Mang sau khi sap xep:"<<endl;
-	for(int i=0;i<5;i++){
-		cout<<a[i]<<" ";
-	}
-	system("pause");
-}
