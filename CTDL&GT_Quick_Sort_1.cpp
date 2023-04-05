@@ -1,3 +1,4 @@
+//https://freetuts.net/thuat-toan-sap-xep-nhanh-quick-sort-2940.html
 //Hàm partition()
 int partition (int arr[], int low, int high)
 {
