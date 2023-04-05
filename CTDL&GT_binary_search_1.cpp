@@ -1,3 +1,4 @@
+// TRong C++
 int BinarySearch(int a[],int n,int x)
 {
 	int left, right, mid; left=0; right=n-1;
